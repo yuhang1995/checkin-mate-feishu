@@ -1,0 +1,26 @@
+{
+  "name": "checkin-mate-feishu",
+  "version": "1.0.0",
+  "description": "在飞书中利用机器人指令+机器人，实现定时缺卡提醒，让你不再忘记为数不多的补卡机会",
+  "main": "index.mjs",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config index.mjs"
+  },
+  "keywords": [
+    "feishu",
+    "bot",
+    "checkin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.23.0",
+    "body-parser": "^1.20.2",
+    "dayjs": "^1.11.10",
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0"
+  }
+}
