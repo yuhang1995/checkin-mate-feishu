@@ -9,11 +9,17 @@
         "types": [
             "node"
         ],
-        "baseUrl": "./",
+        "baseUrl": ".",
         "paths": {
-            "@": [
+            "@/*": [
                 "src/*"
             ]
         }
-    }
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
 }

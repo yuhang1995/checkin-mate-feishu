@@ -6,8 +6,11 @@ WORKDIR /app
 
 COPY . .
 
-RUN pnpm install --production
+RUN corepack enable
 
-CMD ["node", "index.mjs"]
+RUN pnpm install --production
+RUN pnpm run build
+
+CMD ["pnpm", "start"]
 
 EXPOSE 3000

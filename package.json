@@ -4,7 +4,9 @@
   "description": "在飞书中利用机器人指令+机器人，实现定时缺卡提醒，让你不再忘记为数不多的补卡机会",
   "main": "index.mjs",
   "scripts": {
-    "dev": "nodemon -r dotenv/config src/server.ts"
+    "dev": "nodemon -r dotenv/config -r tsconfig-paths/register src/server.ts",
+    "build": "tsc",
+    "start": "node -r dotenv/config dist/server.js"
   },
   "keywords": [
     "feishu",
@@ -26,6 +28,7 @@
     "dotenv": "^16.4.5",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0"
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
   }
 }

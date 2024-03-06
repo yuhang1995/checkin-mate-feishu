@@ -1,7 +1,7 @@
 import express from "express"
 
 import { webhookRouter } from "./routes"
-import { logger } from "./utils"
+import { logger } from "@/utils"
 import { errorHandler } from "./middleware"
 
 const PORT = process.env.PORT
