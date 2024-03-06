@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN yarn install --production
+RUN pnpm install --production
 
 CMD ["node", "index.mjs"]
 
