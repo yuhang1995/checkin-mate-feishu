@@ -11,6 +11,8 @@ RUN corepack enable
 RUN pnpm install --production
 RUN pnpm run build
 
+COPY ./dist ./dist
+
 CMD ["pnpm", "start"]
 
 EXPOSE 3000
